@@ -1,0 +1,9 @@
+First, list a numbered plan:
+1) Extract/normalize inputs...
+2) Choose data structures...
+3) Handle edge cases...
+4) Provide final algorithm with complexity.
+After the plan, produce the final function.
+
+{{> base_task}}
+

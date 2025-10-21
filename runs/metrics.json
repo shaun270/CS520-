@@ -1,0 +1,422 @@
+[
+  {
+    "problem": "is_anagram",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "is_anagram",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 1,
+    "c": 1,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "is_anagram",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "is_anagram",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "longest_common_prefix",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "longest_common_prefix",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 1,
+    "pass@1": 0.5,
+    "pass@5": null
+  },
+  {
+    "problem": "longest_common_prefix",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "longest_common_prefix",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "merge_intervals",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "merge_intervals",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 1,
+    "pass@1": 0.5,
+    "pass@5": null
+  },
+  {
+    "problem": "merge_intervals",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "merge_intervals",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "nth_fib",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "nth_fib",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "nth_fib",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "nth_fib",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "roman_to_int",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 1,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "roman_to_int",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "roman_to_int",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "roman_to_int",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "rotate_matrix_90_clockwise",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 1,
+    "c": 1,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "rotate_matrix_90_clockwise",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 1,
+    "pass@1": 0.5,
+    "pass@5": null
+  },
+  {
+    "problem": "rotate_matrix_90_clockwise",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "rotate_matrix_90_clockwise",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "sum_of_primes_upto",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "sum_of_primes_upto",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "debug_hint",
+    "n": 3,
+    "c": 2,
+    "pass@1": 0.6667,
+    "pass@5": null
+  },
+  {
+    "problem": "sum_of_primes_upto",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "sum_of_primes_upto",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "sum_of_primes_upto",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 5,
+    "c": 1,
+    "pass@1": 0.2,
+    "pass@5": 1.0
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 4,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "llama",
+    "model_name": "llama3",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "llama",
+    "model_name": "llama3",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "two_sum",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "valid_parentheses",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "cot",
+    "n": 2,
+    "c": 1,
+    "pass@1": 0.5,
+    "pass@5": null
+  },
+  {
+    "problem": "valid_parentheses",
+    "model_family": "google",
+    "model_name": "models_gemini-2.5-flash",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "valid_parentheses",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "valid_parentheses",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 2,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "word_wrap",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "cot",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  },
+  {
+    "problem": "word_wrap",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "debug_hint",
+    "n": 3,
+    "c": 3,
+    "pass@1": 1.0,
+    "pass@5": null
+  },
+  {
+    "problem": "word_wrap",
+    "model_family": "llama",
+    "model_name": "llama3.2",
+    "strategy": "self_repair",
+    "n": 2,
+    "c": 0,
+    "pass@1": 0.0,
+    "pass@5": null
+  }
+]

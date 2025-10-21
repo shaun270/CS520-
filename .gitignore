@@ -1,0 +1,59 @@
+# === OS cruft ===
+.DS_Store
+Thumbs.db
+
+# === Python bytecode & build ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Notebooks ===
+.ipynb_checkpoints/
+
+# === Test & tooling caches ===
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.pyre/
+.cache/
+
+# === Editors / IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Credentials / secrets (don’t commit keys) ===
+.env
+.env.*
+*.secret
+*.pem
+*.key
+
+# === Project-specific runs ===
+# Keep generated code and results for the assignment
+#   - DO NOT ignore: runs/raw_generations/**, runs/results.jsonl, runs/metrics.json
+# Ignore only transient subfolders if they appear
+runs/tmp/
+runs/cache/
+runs/checkpoints/
+runs/artifacts/
+
+# If you ever save local screenshots/log dumps
+screenshots/
+logs/
