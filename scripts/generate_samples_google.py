@@ -1,15 +1,15 @@
 import os, pathlib, time, re, sys, argparse
 import google.generativeai as genai
 
-# -------- DEFAULTS (used if no CLI override) --------
+
 DEFAULT_PRIMARY_MODEL  = "models/gemini-2.5-flash"
 DEFAULT_FALLBACK_MODEL = "models/gemini-2.5-flash"
 DEFAULT_TEMPERATURE    = 0.2
 DEFAULT_N_SAMPLES      = 2
 MAX_TOKENS             = 2000
-DEFAULT_RETRIES        = 1          # retries per model
-DEFAULT_SLEEP_SECONDS  = 35         # free-tier friendly
-# ----------------------------------------------------
+DEFAULT_RETRIES        = 1        
+DEFAULT_SLEEP_SECONDS  = 35        
+
 
 PROBLEMS = {
     "two_sum": {
@@ -195,7 +195,7 @@ def main():
                 out_dir.mkdir(parents=True, exist_ok=True)
                 (out_dir / f"sample_{i}.py").write_text(code)
 
-    print("✅ Done.")
+    print("Done.")
 
 if __name__ == "__main__":
     main()

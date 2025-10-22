@@ -31,7 +31,7 @@ htmlcov/
 .mypy_cache/
 .pyre/
 .cache/
-__pycache__
+tests/__pycache__
 
 # === Editors / IDEs ===
 .vscode/

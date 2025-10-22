@@ -1,4 +1,4 @@
-# scripts/generate_samples_llama.py
+
 import os, time, pathlib, re, argparse, requests, ast
 
 CODE_FENCE_RE = re.compile(r"```(?:python)?\s*(.*?)```", flags=re.S | re.I)
@@ -83,21 +83,20 @@ def llama_generate(prompt, model="codellama:7b-instruct", temperature=0.1, retri
     """
     opts = {
         "temperature": temperature,
-        "num_predict": 896,   # more room to avoid truncation
+        "num_predict": 896,   
         "top_p": 0.9,
         "repeat_penalty": 1.05,
-        # no "stop" here
     }
     base = os.environ.get("OLLAMA_HOST", "http://localhost:11434").rstrip("/")
     url = f"{base}/api/generate"
 
     last_err = None
-    for _ in range(retries + 2):  # one extra retry
+    for _ in range(retries + 2):  
         try:
             r = requests.post(
                 url,
                 json={"model": model, "prompt": prompt, "stream": False, "options": opts},
-                timeout=600,  # allow model to load on first call
+                timeout=600,  
             )
             if r.status_code == 200:
                 text = r.json().get("response", "")
@@ -144,7 +143,6 @@ def main():
 
         code = extract_code(raw)
 
-        # Ensure correct function name/signature appears; if not, one stricter retry
         if f"def {fname}(" not in code:
             strict = prompt + "\n\nYour last output did not keep the exact function name/signature. Fix it now."
             raw2 = llama_generate(strict, model=args.model, temperature=0.0, retries=0)
@@ -153,7 +151,6 @@ def main():
                 if f"def {fname}(" in code2:
                     code = code2
 
-        # Compile check; if broken, do one retry asking for complete compilable function
         if not compilable(code):
             strict2 = prompt + "\n\nYour last output was incomplete. Return ONLY one fenced ```python``` block with a COMPLETE function that compiles."
             raw3 = llama_generate(strict2, model=args.model, temperature=0.0, retries=0)
@@ -166,7 +163,7 @@ def main():
         out_dir = out_root / args.problem / f"llama-{args.model}" / args.strategy
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"sample_{i}.py").write_text(code)
-        print(f"✅ Saved {args.problem}/{args.strategy}/sample_{i}")
+        print(f"Saved {args.problem}/{args.strategy}/sample_{i}")
 
 if __name__ == "__main__":
     main()

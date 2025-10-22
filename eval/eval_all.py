@@ -13,10 +13,9 @@ def iter_samples():
                     yield problem, model_dir.name, strat_dir.name, sample
 
 def main():
-    RESULTS.write_text("")  # reset; remove this line if you want append-only
+    RESULTS.write_text("")  
     for problem, model_key, strategy, sample_path in iter_samples():
         model_family, model_name = model_key.split("-", 1)
-        # run scorer
         out = subprocess.check_output([
             sys.executable, "-m", "eval.run_and_score",
             "--problem", problem,
@@ -35,7 +34,6 @@ def main():
             f.write(json.dumps(row) + "\n")
         print(row)
 
-    # aggregate
     agg = subprocess.check_output([sys.executable, "-m", "eval.eval_passk", str(RESULTS)], text=True)
     (ROOT / "runs" / "metrics.json").write_text(agg)
     print("\n=== Aggregated pass@k written to runs/metrics.json ===")

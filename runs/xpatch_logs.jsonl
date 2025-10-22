@@ -1,0 +1,33 @@
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": true}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": false}
+{"round": 2, "patched": true, "passed": false}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": false}
+{"round": 2, "patched": true, "passed": false}
+{"round": 3, "patched": false, "reason": "Unusable patch or no change."}
+{"round": 0, "passed": true}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 0, "passed": false}
+{"round": 1, "patched": false, "reason": "Unusable patch or no change."}
+{"round": 0, "passed": true}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false, "error": "Builder returned empty code."}
+{"round": 0, "passed": false, "error": "Builder returned empty code."}
+{"round": 0, "passed": true}
+{"round": 0, "passed": true}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": false}
+{"round": 2, "patched": true, "passed": false}
+{"round": 0, "passed": true}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": false}
+{"round": 2, "patched": true, "passed": false}
+{"round": 0, "passed": false}
+{"round": 1, "patched": true, "passed": true}
