@@ -70,7 +70,6 @@ def test_word_wrap():
     out = word_wrap(text, 10)
     assert all(len(line) <= 10 for line in out)
     assert " ".join(out) == text
-    # long word
     text2 = "supercalifragilisticexpialidocious test"
     out2 = word_wrap(text2, 10)
     assert out2[0] == "supercalifragilisticexpialidocious"

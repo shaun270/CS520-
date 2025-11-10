@@ -1,4 +1,4 @@
-```python
+
 def valid_parentheses(s: str) -> bool:
     """
     Validates if the parentheses (), [], {} in a string are properly nested and balanced.

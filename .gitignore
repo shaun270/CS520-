@@ -50,11 +50,28 @@ tests/__pycache__
 # Keep generated code and results for the assignment
 #   - DO NOT ignore: runs/raw_generations/**, runs/results.jsonl, runs/metrics.json
 # Ignore only transient subfolders if they appear
-runs/tmp/
-runs/cache/
-runs/checkpoints/
-runs/artifacts/
+runs/raw_generations
 
-# If you ever save local screenshots/log dumps
-screenshots/
-logs/
+
+# --- Coverage / pytest-cov ---
+.coverage
+.coverage.*
+coverage.xml
+coverage_*.xml
+coverage.html
+htmlcov/
+coverage_html/
+coverage_html_*/
+coverage*/
+# common names we used in this project
+coverage_all.xml
+coverage_lcp_vp.xml
+coverage_iter2.xml
+
+# --- Pytest cache ---
+.pytest_cache/
+
+# --- Python build junk (nice to ignore too) ---
+__pycache__/
+*.py[cod]
+*.pyo

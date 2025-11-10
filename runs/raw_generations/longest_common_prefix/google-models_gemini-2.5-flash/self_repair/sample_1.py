@@ -1,4 +1,3 @@
-```python
 def longest_common_prefix(strs: list[str]) -> str:
     if not strs:
         return ""
